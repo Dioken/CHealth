@@ -9,3 +9,10 @@ You've been asked to refactor the function `deterministicPartitionKey` in [`dpk.
 You will be graded on the exhaustiveness and quality of your unit tests, the depth of your refactor, and the level of insight into your thought process provided by the written explanation.
 
 ## Your Explanation Here
+if the event is not define we can directly return the TRIVIAL_PARTITION_KEY.
+if we have candidate and it is not a string so we can make it a string.
+
+It's more readable because:
+We have less code
+We have one condition for event.partitionKey and it is not imbricated
+We have one codition to stringfy and it is not imbricated
