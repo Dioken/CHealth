@@ -16,3 +16,17 @@ Based on the information given, break this ticket down into 2-5 individual ticke
 You will be graded on the level of detail in each ticket, the clarity of the execution plan within and between tickets, and the intelligibility of your language. You don't need to be a native English speaker, but please proof-read your work.
 
 ## Your Breakdown Here
+1- Modify the database: Here I will add in the Agent table a column custum_id and make it unique so we can not have several Agents with the same custum_id.
+
+2- Modify the code:
+  - In the function `getShiftsByFacility` I will change it to send back the custum_id from the Agent table.
+  - Modified  `generateReport` function if needed.
+  - Create an API call or modify the existing one to make that Facilities can add / modify the custum_id.
+  
+  For our coding or retriving data from the database I will use the internal ID of Agent table. But, we will send back or show the client the custum_id.
+
+3- Tests:
+  - Unit test: Tests getShiftsByFacility, generateReport, the call API
+  - Integration tests: Be able to add custum_id for example "Super Agent", ask the the report and make sure that "Super Agent" appear in the pdf document.
+
+NB: I will not make a frontend tickets because the test is for backend.
